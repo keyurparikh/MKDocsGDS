@@ -2,7 +2,5 @@ applications:
   - name: keyurDocs
     memory: 32M
     buildpacks:
-      - staticfddsfile_buildpack
+      - staticfile_buildpack
     random-route: true
-dsfasfsa
-asdfsa
