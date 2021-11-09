@@ -1,6 +1,6 @@
 # mod-standards
 
-MKDocs template to publish standards
+MKDocs template to publish standardsTest
 
  https://defencedigital.github.io/mod-standards-digital-rules/
 
