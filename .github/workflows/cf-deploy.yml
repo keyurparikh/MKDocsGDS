@@ -1,9 +1,9 @@
-name: Deploy
+name: Deploy to GOVUK PaaS
 on:
-  push:
-    branches: 
-      - master
-
+  workflow_run:
+    workflows: ["GitHub Pages Deploy (workflow)"]
+    types:
+      - completed
 jobs:
   deploy:
     runs-on: ubuntu-latest
