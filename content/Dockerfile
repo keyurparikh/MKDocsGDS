@@ -8,4 +8,4 @@ RUN apk update \
 FROM alpine:3
 COPY --from=download /cf /usr/bin/cf
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
