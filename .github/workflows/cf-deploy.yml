@@ -2,13 +2,15 @@ name: Deploy
 on:
   push:
     branches: 
-      - gh-pages
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
       - name: Deploy to Cloud Foundry
         uses: jhunt/cf-push@v1
         with:
